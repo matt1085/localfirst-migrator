@@ -24,10 +24,10 @@ Not affiliated with or endorsed by Bazzite, Universal Blue, or Fedora.
 
 ## Stripe Buy button
 
-Until checkout is live, Buy links point to `#pricing`.
+Customer Buy CTAs use the live Stripe Payment Link:
 
-When you have a Stripe Checkout URL, set it in `index.html` where noted:
-
-```js
-var url = "https://buy.stripe.com/...";
+```text
+https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00
 ```
+
+No Stripe secret keys are stored in this repository.

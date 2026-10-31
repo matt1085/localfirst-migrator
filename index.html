@@ -24,7 +24,7 @@
         <li><a href="#how-it-works">How it works</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="support/">Support</a></li>
-        <li><a class="nav-cta" href="#pricing">Buy</a></li>
+        <li><a class="nav-cta" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy</a></li>
       </ul>
     </div>
   </header>
@@ -37,10 +37,9 @@
         <p class="hero-lead">Move supported Flatpak apps between Bazzite computers safely and locally — with a preview before anything changes.</p>
         <p class="hero-price"><strong>$29</strong> founder price · one-time purchase · planned standard <strong>$39</strong></p>
         <div class="cta-row">
-          <a class="button button-primary" href="#pricing" id="buy-button" data-checkout-url="">Buy LocalFirst Migrator</a>
+          <a class="button button-primary" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00" id="buy-button">Buy LocalFirst Migrator</a>
           <a class="button button-secondary" href="#how-it-works">See how it works</a>
         </div>
-        <p class="note">Purchasing comes online shortly. The Buy button will point to checkout once Stripe is connected.</p>
         <p class="disclaimer">Independent software for migration and profile management on Bazzite. Not affiliated with or endorsed by Bazzite, Universal Blue, or Fedora.</p>
       </div>
     </section>
@@ -236,9 +235,9 @@
             <p class="amount">$29 <span class="strike">$39</span></p>
             <p>One-time purchase for household personal use. Major-version upgrades may be separate later.</p>
             <div class="cta-row">
-              <a class="button button-primary" href="#pricing" data-checkout-url="">Buy LocalFirst Migrator</a>
+              <a class="button button-primary" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy LocalFirst Migrator</a>
             </div>
-            <p class="note">Purchasing coming online shortly. Replace the Buy button target with your Stripe Checkout URL when ready.</p>
+            <p class="note">One-time purchase. Secure checkout is hosted by Stripe.</p>
           </div>
           <div class="panel">
             <h3>Includes</h3>
@@ -293,14 +292,6 @@
   <script src="assets/site.js" defer></script>
   <script>
     document.getElementById("year").textContent = String(new Date().getFullYear());
-    // When Stripe Checkout is ready, set data-checkout-url on Buy buttons or replace this URL.
-    (function () {
-      var url = ""; // e.g. "https://buy.stripe.com/..."
-      if (!url) return;
-      document.querySelectorAll("[data-checkout-url]").forEach(function (el) {
-        el.setAttribute("href", url);
-      });
-    })();
   </script>
 </body>
 </html>
