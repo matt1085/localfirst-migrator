@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support — LocalFirst Migrator</title>
-  <meta name="description" content="Support scope and contact options for LocalFirst Migrator.">
+  <meta name="description" content="Support scope, safe reporting, and contact options for LocalFirst Migrator. Do not post payment or secret data in public issues.">
   <link rel="canonical" href="https://matt1085.github.io/localfirst-migrator/support/">
+  <meta property="og:title" content="Support — LocalFirst Migrator">
+  <meta property="og:description" content="Best-effort support for LocalFirst Migrator. Keep payment details and secrets out of public issues.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://matt1085.github.io/localfirst-migrator/support/">
+  <meta property="og:image" content="https://matt1085.github.io/localfirst-migrator/assets/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Support — LocalFirst Migrator">
+  <meta name="twitter:description" content="Best-effort support. Keep payment details and secrets out of public issues.">
+  <meta name="twitter:image" content="https://matt1085.github.io/localfirst-migrator/assets/og-card.jpg">
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
@@ -18,7 +27,7 @@
         <li><a href="../features/">Features</a></li>
         <li><a href="../#pricing">Pricing</a></li>
         <li><a href="./" aria-current="page">Support</a></li>
-        <li><a class="nav-cta" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy</a></li>
+        <li><a class="nav-cta" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy $29</a></li>
       </ul>
     </div>
   </header>
@@ -30,10 +39,33 @@
     </section>
 
     <section class="section prose">
+      <div class="warning-box" role="note">
+        <strong>Public GitHub Issues are public.</strong>
+        <p>Do <strong>not</strong> post any of the following in an issue, comment, or screenshot:</p>
+        <ul>
+          <li>Stripe order / payment information, receipts, or last-four card digits</li>
+          <li>Email addresses or postal addresses</li>
+          <li>API keys, tokens, passwords, SSH private keys, or wallet seeds</li>
+          <li>Checkout session IDs or download URLs that contain session parameters</li>
+          <li>Private network details (LAN IPs, Tailscale names, VPN endpoints)</li>
+          <li>Unsanitized diagnostic logs or home-directory paths with personal data</li>
+        </ul>
+        <p>Refund transaction identifiers also do <strong>not</strong> belong in public issues. Use the <a href="../refunds/">refund policy</a> process instead.</p>
+      </div>
+
       <h2>How to contact support</h2>
-      <p>Open a support request on the public repository:</p>
+      <p>Open a support request on the public repository for technical product issues:</p>
       <p><a class="button button-primary" href="https://github.com/matt1085/localfirst-migrator/issues/new">Open a GitHub issue</a></p>
-      <p class="note">Do not paste private keys, passwords, tokens, wallet data, or arbitrary home-directory files into an issue.</p>
+      <p class="note"><strong>Operational follow-up:</strong> private refund or purchase-identity handling currently lacks a dedicated private inbox on this site. Prefer Stripe’s customer receipt/support paths for payment identity; keep GitHub issues technical and sanitized. Adding a private refund contact without paid SaaS is a follow-up item for the operator.</p>
+
+      <h2>Sanitizing diagnostic reports</h2>
+      <ol>
+        <li>Prefer in-app <strong>Diagnostics → Export support report</strong> (designed to be sanitized).</li>
+        <li>Before attaching any log or screenshot, search for and remove emails, IPs, hostnames, usernames, home paths, tokens, and session IDs.</li>
+        <li>Replace machine names with labels like <code>Desktop</code> / <code>Laptop</code>.</li>
+        <li>Never paste raw <code>~/.ssh</code>, wallet, browser, or password-manager contents.</li>
+      </ol>
+      <p>A support report may include product version, build identity, OS/image/architecture, adapter states, transaction IDs and phases, redacted errors, and peer link state without private keys.</p>
 
       <h2>In scope for v1</h2>
       <ul>
@@ -50,11 +82,6 @@
         <li>General Linux administration unrelated to the product</li>
         <li>Problems caused only by unsafe third-party Flatpak remotes</li>
       </ul>
-
-      <h2>Support reports</h2>
-      <p>From the application: <strong>Diagnostics → Export support report</strong> (sanitized).</p>
-      <p>A support report may include product version, build identity, OS/image/architecture, adapter states, transaction IDs and phases, redacted errors, and peer link state without private keys.</p>
-      <p>It must not include SSH private keys, GnuPG content, browser data, KDE Wallet or password-manager data, tokens, or arbitrary home files.</p>
 
       <h2>Response expectation</h2>
       <p>Best-effort replies within about two business days for paid customers during launch. This is not a 24/7 operations center.</p>

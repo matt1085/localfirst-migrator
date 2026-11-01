@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bazzite to Bazzite migration — LocalFirst Migrator</title>
+  <meta name="description" content="How to move to a new Bazzite PC without rebuilding every Flatpak by hand. Fresh install, home copy, and LocalFirst Migrator for supported Flatpak migration.">
+  <link rel="canonical" href="https://matt1085.github.io/localfirst-migrator/bazzite-migration/">
+  <meta property="og:title" content="Bazzite to Bazzite migration">
+  <meta property="og:description" content="Moving to a new Bazzite PC: what community advice covers, and where LocalFirst Migrator helps with supported Flatpaks.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://matt1085.github.io/localfirst-migrator/bazzite-migration/">
+  <meta property="og:image" content="https://matt1085.github.io/localfirst-migrator/assets/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bazzite to Bazzite migration">
+  <meta name="twitter:description" content="Moving to a new Bazzite PC without rebuilding every Flatpak by hand.">
+  <meta name="twitter:image" content="https://matt1085.github.io/localfirst-migrator/assets/og-card.jpg">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../">Local<span>First</span> Migrator</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-links" id="site-nav" data-nav-links>
+        <li><a href="../features/">Features</a></li>
+        <li><a href="../#pricing">Pricing</a></li>
+        <li><a href="../support/">Support</a></li>
+        <li><a class="nav-cta" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy $29</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="page-hero">
+      <h1>Moving to a new Bazzite PC</h1>
+      <p class="section-lead">Community advice usually means: install Bazzite fresh, copy your home directory, then recreate applications. Here is how that fits with LocalFirst Migrator.</p>
+    </section>
+
+    <section class="section prose">
+      <h2>What people commonly do</h2>
+      <p>On Bazzite and Universal Blue forums, “new PC” threads often recommend:</p>
+      <ol>
+        <li>Install Bazzite on the new machine (same username helps for home restores).</li>
+        <li>Copy <code>/var/home/&lt;user&gt;</code> (or use rsync) for documents and many app configs.</li>
+        <li>Reinstall Flatpaks from a saved list, or hope userdata in <code>~/.var/app</code> lines up after apps exist again.</li>
+      </ol>
+      <p>Disk clones (Clonezilla / Rescuezilla) appear when someone wants the <em>entire</em> install moved to a new drive — a different job than recreating apps on a clean image.</p>
+
+      <h2>Where that workflow is painful</h2>
+      <ul>
+        <li>Rebuilding dozens of Flatpaks from memory or a text file</li>
+        <li>No preview of what will install vs what is already present</li>
+        <li>Mixing “copy home” with “I also need Brew / KDE settings / Distrobox”</li>
+        <li>No guided rollback if a Flatpak install step goes wrong</li>
+      </ul>
+
+      <h2>Where LocalFirst Migrator helps</h2>
+      <p>After both PCs are on Bazzite, LocalFirst Migrator can:</p>
+      <ul>
+        <li>Scan and compare <strong>supported Flatpak</strong> state between machines</li>
+        <li>Show a reviewable plan and a dry-run with <strong>zero changes</strong></li>
+        <li>Apply supported Flatpak installs transactionally</li>
+        <li>Offer rollback while the transaction remains valid</li>
+        <li>Provide <strong>manual</strong> Flatpak sync when you want alignment on purpose</li>
+      </ul>
+      <p>It is local-first: no cloud account for core use, no telemetry by default, secrets never sync.</p>
+
+      <h2>What it does not do</h2>
+      <ul>
+        <li>Clone a whole disk or migrate an entire Linux installation</li>
+        <li>Write-migrate KDE settings, Homebrew, or Distrobox in v1</li>
+        <li>Synchronize passwords, keys, or wallets</li>
+        <li>Replace Timeshift / Borg / Clonezilla for backup imaging</li>
+      </ul>
+
+      <h2>Suggested honest workflow</h2>
+      <ol>
+        <li>Install Bazzite on the new PC.</li>
+        <li>Move documents the way you already trust (home copy, external drive, etc.).</li>
+        <li>Use LocalFirst Migrator for the supported Flatpak gap between old and new.</li>
+        <li>Re-do desktop settings and other stacks manually until they are supported.</li>
+      </ol>
+
+      <div class="cta-row">
+        <a class="button button-primary" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy — $29 founder price</a>
+        <a class="button button-secondary" href="../features/">Feature matrix</a>
+      </div>
+      <p class="note"><a href="../">Home</a> · <a href="../flatpak-migration/">Flatpak migration guide</a> · <a href="../privacy/">Privacy</a> · <a href="../refunds/">Refunds</a> · <a href="../terms/">Terms</a> · <a href="../support/">Support</a></p>
+      <p class="disclaimer">Independent software for migration and profile management on Bazzite. Not affiliated with or endorsed by Bazzite, Universal Blue, or Fedora.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul class="footer-links">
+        <li><a href="../">Home</a></li>
+        <li><a href="../features/">Features</a></li>
+        <li><a href="../support/">Support</a></li>
+        <li><a href="https://github.com/matt1085/localfirst-migrator">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../assets/site.js" defer></script>
+</body>
+</html>

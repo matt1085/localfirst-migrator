@@ -3,15 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LocalFirst Migrator — Flatpak migration for Bazzite</title>
-  <meta name="description" content="Move supported Flatpak apps between Bazzite computers safely and locally. Preview first, migrate with rollback, never sync secrets. Founder price $29.">
+  <title>LocalFirst Migrator — Move Flatpaks between Bazzite PCs</title>
+  <meta name="description" content="Move your supported Flatpak setup between Bazzite PCs. Preview before changes, rollback supported, no cloud account, no telemetry. $29 one-time founder price.">
   <meta name="theme-color" content="#0f6e6a">
   <link rel="canonical" href="https://matt1085.github.io/localfirst-migrator/">
-  <meta property="og:title" content="LocalFirst Migrator">
-  <meta property="og:description" content="Move supported Flatpak apps between Bazzite computers safely and locally.">
+  <meta property="og:title" content="LocalFirst Migrator — Flatpak migration for Bazzite">
+  <meta property="og:description" content="Move your supported Flatpak setup between Bazzite PCs. Preview first. Rollback supported. No cloud account. $29 once.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://matt1085.github.io/localfirst-migrator/">
+  <meta property="og:image" content="https://matt1085.github.io/localfirst-migrator/assets/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LocalFirst Migrator — Flatpak migration for Bazzite">
+  <meta name="twitter:description" content="Move your supported Flatpak setup between Bazzite PCs. Preview first. Rollback supported. No cloud account. $29 once.">
+  <meta name="twitter:image" content="https://matt1085.github.io/localfirst-migrator/assets/og-card.jpg">
   <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "LocalFirst Migrator",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Bazzite KDE (x86_64)",
+    "softwareVersion": "1.0.0",
+    "url": "https://matt1085.github.io/localfirst-migrator/",
+    "image": "https://matt1085.github.io/localfirst-migrator/assets/og-card.jpg",
+    "description": "Local-first tool to move supported Flatpak applications between Bazzite computers with preview and rollback.",
+    "offers": {
+      "@type": "Offer",
+      "price": "29.00",
+      "priceCurrency": "USD",
+      "url": "https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00",
+      "availability": "https://schema.org/InStock"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local First Software"
+    }
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,10 +52,10 @@
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
       <ul class="nav-links" id="site-nav" data-nav-links>
         <li><a href="features/">Features</a></li>
-        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#why">Why</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="support/">Support</a></li>
-        <li><a class="nav-cta" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy</a></li>
+        <li><a class="nav-cta" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy $29</a></li>
       </ul>
     </div>
   </header>
@@ -32,22 +63,59 @@
   <main id="main">
     <section class="hero">
       <div class="wrap">
-        <p class="hero-kicker">Version 1.0 · Bazzite KDE · x86_64</p>
+        <p class="hero-kicker">Version 1.0.0 · Bazzite KDE · x86_64</p>
         <h1>LocalFirst Migrator</h1>
-        <p class="hero-lead">Move supported Flatpak apps between Bazzite computers safely and locally — with a preview before anything changes.</p>
-        <p class="hero-price"><strong>$29</strong> founder price · one-time purchase · planned standard <strong>$39</strong></p>
+        <p class="hero-lead">Move your supported Flatpak setup between Bazzite PCs. Preview before making changes. Rollback supported. No cloud account. No telemetry. <strong>$29 once.</strong></p>
+        <ul class="hero-points">
+          <li>Preview before changes</li>
+          <li>Rollback for supported Flatpaks</li>
+          <li>No cloud account</li>
+          <li>No telemetry by default</li>
+          <li>$29 one-time</li>
+        </ul>
+        <p class="hero-price"><strong>$29</strong> founder price · household personal-use license · planned standard <strong>$39</strong></p>
         <div class="cta-row">
-          <a class="button button-primary" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00" id="buy-button">Buy LocalFirst Migrator</a>
+          <a class="button button-primary" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00" id="buy-button">Buy LocalFirst Migrator — $29</a>
           <a class="button button-secondary" href="#how-it-works">See how it works</a>
         </div>
+        <p class="note">Secure checkout by Stripe. Download unlocks after payment. <a href="refunds/">Refund policy</a>.</p>
         <p class="disclaimer">Independent software for migration and profile management on Bazzite. Not affiliated with or endorsed by Bazzite, Universal Blue, or Fedora.</p>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="wrap">
+        <h2 class="section-title">Why this exists</h2>
+        <p class="section-lead">Moving to a new Bazzite PC usually means rebuilding Flatpaks by hand — or copying a home directory and hoping applications match.</p>
+        <div class="split">
+          <div class="panel">
+            <h3>What people do today</h3>
+            <ul class="compare-list">
+              <li>Reinstall every Flatpak from memory or a saved <code>flatpak list</code></li>
+              <li>Shell loops: export refs/remotes, then <code>flatpak install</code> one by one</li>
+              <li>Copy selected <code>~/.var/app</code> folders or entire home trees with rsync</li>
+              <li>Clone a whole disk when they only needed their apps on a fresh install</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>What LocalFirst Migrator does instead</h3>
+            <ul class="compare-list">
+              <li>Inventories supported Flatpaks on both machines</li>
+              <li>Shows a reviewable plan before anything changes</li>
+              <li>Applies supported Flatpak installs through a transactional path</li>
+              <li>Lets you roll back while the transaction remains valid</li>
+            </ul>
+            <p class="note">It does <strong>not</strong> migrate an entire Linux installation, KDE settings, Homebrew, Distrobox, or secrets. Open-source guides and tools remain valid alternatives for broader jobs.</p>
+          </div>
+        </div>
+        <p class="note">Guides: <a href="bazzite-migration/">Bazzite-to-Bazzite migration</a> · <a href="flatpak-migration/">Flatpak migration workflow</a></p>
       </div>
     </section>
 
     <section class="section" id="how-it-works">
       <div class="wrap">
         <h2 class="section-title">How it works</h2>
-        <p class="section-lead">A clear path from scan to verified Flatpak migration — without rebuilding your application setup by hand.</p>
+        <p class="section-lead">Scan → link → review → preview → apply → verify. Manual Flatpak sync when you want alignment on purpose.</p>
         <ol class="steps">
           <li>
             <h3>Scan</h3>
@@ -74,6 +142,51 @@
             <p>Confirm the result. Roll back supported Flatpak migrations when still valid.</p>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <div class="wrap">
+        <h2 class="section-title">See the workflow</h2>
+        <p class="section-lead">Sanitized demo labels (<strong>Desktop</strong> / <strong>Laptop</strong>). Illustrative UI of the qualified 1.0 workflow — not a live capture of a private machine.</p>
+        <div class="shot-grid">
+          <div class="shot-card">
+            <figure>
+              <img src="assets/screenshots/01-scan-inventory.jpg" width="1280" height="720" alt="LocalFirst Migrator inventory showing supported Flatpak apps on Desktop" loading="lazy">
+              <figcaption>Scan and inventory supported Flatpaks</figcaption>
+            </figure>
+          </div>
+          <div class="shot-card">
+            <figure>
+              <img src="assets/screenshots/02-link-computers.jpg" width="1280" height="720" alt="Link computers screen with Desktop and Laptop paired locally" loading="lazy">
+              <figcaption>Link two Bazzite PCs without a cloud account</figcaption>
+            </figure>
+          </div>
+          <div class="shot-card">
+            <figure>
+              <img src="assets/screenshots/03-migration-review.jpg" width="1280" height="720" alt="Migration review listing will install, already present, and not yet supported rows" loading="lazy">
+              <figcaption>Review what moves — and what does not</figcaption>
+            </figure>
+          </div>
+          <div class="shot-card">
+            <figure>
+              <img src="assets/screenshots/04-preview-dry-run.jpg" width="1280" height="720" alt="Dry-run preview banner stating no changes were made" loading="lazy">
+              <figcaption>Preview with zero changes</figcaption>
+            </figure>
+          </div>
+          <div class="shot-card">
+            <figure>
+              <img src="assets/screenshots/05-migration-success.jpg" width="1280" height="720" alt="Successful supported Flatpak migration with rollback available" loading="lazy">
+              <figcaption>Apply, verify, keep history</figcaption>
+            </figure>
+          </div>
+          <div class="shot-card">
+            <figure>
+              <img src="assets/screenshots/07-manual-sync-conflict.jpg" width="1280" height="720" alt="Manual Flatpak sync with conflict choices including keep different" loading="lazy">
+              <figcaption>Manual sync with explicit conflict choices</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -110,10 +223,6 @@
               <td><span class="badge badge-ok">Supported</span></td>
             </tr>
             <tr>
-              <td>Machine-specific separation</td>
-              <td><span class="badge badge-ok">Supported</span></td>
-            </tr>
-            <tr>
               <td>Secret blocking</td>
               <td><span class="badge badge-ok">Supported</span></td>
             </tr>
@@ -143,6 +252,40 @@
       </div>
     </section>
 
+    <section class="section" id="trust">
+      <div class="wrap">
+        <h2 class="section-title">Trust and security</h2>
+        <p class="section-lead">Claims match qualified 1.0 behavior — not marketing absolutes.</p>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <strong>Local-first</strong>
+            <p>Core operation runs on your machines. No cloud account required for migration.</p>
+          </div>
+          <div class="trust-item">
+            <strong>No telemetry by default</strong>
+            <p>Product telemetry stays off unless you deliberately enable diagnostics you control.</p>
+          </div>
+          <div class="trust-item">
+            <strong>Private checkout</strong>
+            <p>Payment is handled by Stripe. The paid binary is not publicly hosted.</p>
+          </div>
+          <div class="trust-item">
+            <strong>Preview before apply</strong>
+            <p>Dry-run shows the plan with zero changes before supported Flatpak operations.</p>
+          </div>
+          <div class="trust-item">
+            <strong>Rollback when valid</strong>
+            <p>Supported Flatpak migrations can be rolled back while the transaction remains valid.</p>
+          </div>
+          <div class="trust-item">
+            <strong>Secrets never sync</strong>
+            <p>Passwords, keys, and wallets are blocked. This is not a complete system backup.</p>
+          </div>
+        </div>
+        <p class="note"><a href="privacy/">Privacy</a> · <a href="terms/">Terms</a> · We do not claim “unhackable” or “zero risk.”</p>
+      </div>
+    </section>
+
     <section class="section" id="safety">
       <div class="wrap split">
         <div class="panel">
@@ -156,15 +299,14 @@
           </ul>
         </div>
         <div class="panel">
-          <h3>Privacy by design</h3>
-          <p>LocalFirst Migrator is local-first. No cloud account is required for core use. Telemetry is off by default.</p>
+          <h3>Install expectations</h3>
+          <p>After purchase you download a tar.gz, verify SHA-256, extract, and run <code>./install.sh</code> as a normal user. Launch from the application menu.</p>
           <ul>
-            <li>No cloud account required</li>
-            <li>No telemetry by default</li>
-            <li>Secrets never migrate or sync</li>
-            <li>Peer links stay on your network</li>
+            <li>Platform: Bazzite KDE, x86_64</li>
+            <li>No developer tooling required</li>
+            <li>No root install required for the packaged path</li>
+            <li><a href="support/">Support</a> if install or linking fails</li>
           </ul>
-          <p><a href="privacy/">Read the privacy page →</a></p>
         </div>
       </div>
     </section>
@@ -172,7 +314,7 @@
     <section class="section" id="not-supported">
       <div class="wrap">
         <h2 class="section-title">What v1 does not support</h2>
-        <p class="section-lead">These are not hidden. They are roadmap items — not v1 promises.</p>
+        <p class="section-lead">These are not hidden. They are not v1 promises.</p>
         <div class="panel">
           <ul>
             <li>KDE settings write migration</li>
@@ -181,7 +323,7 @@
             <li>Automatic background synchronization</li>
             <li>Secret / password / key synchronization</li>
             <li>Windows disk erase or dual-boot automation</li>
-            <li>Cloud backup</li>
+            <li>Cloud backup or complete Linux installation clone</li>
           </ul>
         </div>
       </div>
@@ -219,6 +361,10 @@
           <p>No. It does not perform disk wipe or Windows conversion.</p>
         </details>
         <details>
+          <summary>What if I need a refund?</summary>
+          <p>See the <a href="refunds/">refund policy</a>. Do not post Stripe payment identifiers in public GitHub issues.</p>
+        </details>
+        <details>
           <summary>Is it an official Bazzite application?</summary>
           <p>No. Independent software. Not affiliated with or endorsed by Bazzite, Universal Blue, or Fedora.</p>
         </details>
@@ -235,9 +381,9 @@
             <p class="amount">$29 <span class="strike">$39</span></p>
             <p>One-time purchase for household personal use. Major-version upgrades may be separate later.</p>
             <div class="cta-row">
-              <a class="button button-primary" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy LocalFirst Migrator</a>
+              <a class="button button-primary" href="https://buy.stripe.com/28EcN56pR6eVe8f2F58AE00">Buy LocalFirst Migrator — $29</a>
             </div>
-            <p class="note">One-time purchase. Secure checkout is hosted by Stripe.</p>
+            <p class="note">One-time purchase. Secure checkout is hosted by Stripe. <a href="refunds/">Refunds</a>.</p>
           </div>
           <div class="panel">
             <h3>Includes</h3>
@@ -283,6 +429,8 @@
           <li><a href="terms/">Terms</a></li>
           <li><a href="support/">Support</a></li>
           <li><a href="features/">Features</a></li>
+          <li><a href="bazzite-migration/">Bazzite migration</a></li>
+          <li><a href="flatpak-migration/">Flatpak migration</a></li>
           <li><a href="https://github.com/matt1085/localfirst-migrator">GitHub</a></li>
         </ul>
       </div>
